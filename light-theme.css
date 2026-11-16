@@ -1,0 +1,67 @@
+/* LIGHT MODE OVERRIDES */
+:root{--bg:#f3f6fa;--surface:#ffffff;--surface2:#f8fafc;--line:#dbe3ec;--text:#172536;--muted:#64748b;--cyan:#087f8c;--blue:#3569c8;--amber:#a96308;--red:#c43c4b;--green:#168354}
+body{background:#f3f6fa;color:#172536}
+.topbar{background:rgba(255,255,255,.94);border-bottom-color:#dbe3ec;box-shadow:0 2px 10px rgba(15,23,42,.04)}
+.brandmark{border-color:#087f8c44;background:#087f8c0d;color:#087f8c}
+.brandtitle b,.hero h1 span{color:#087f8c}
+.live-dot{background:#168354;box-shadow:0 0 8px #16835455}
+.version,.period{border-color:#dbe3ec}
+.heroicon{color:#087f8c18}
+.upload-panel,.panel{background:#fff;border-color:#dbe3ec;box-shadow:0 8px 24px rgba(15,23,42,.055)}
+.required{border-color:#a9630844;color:#a96308}
+.upload-card{background:#f8fafc;border-color:#cbd5e1}
+.upload-card:hover{border-color:#087f8c;background:#f0fbfc}
+.fileicon{color:#168354;border-color:#16835444;background:#1683540c}
+.filename{color:#64748b}
+.upload-action{color:#087f8c}
+#analyzeBtn{background:#087f8c;color:#fff;box-shadow:0 5px 14px #087f8c22}
+#analyzeBtn:disabled{opacity:.45}
+.progress.active{background:#e2e8f0}
+.progress i{background:#087f8c}
+.kpi{background:#fff;border-color:#dbe3ec}
+.kpi-label,.kpi-note{color:#64748b}
+.tab{color:#64748b}
+.tab.active{color:#087f8c;border-color:#087f8c}
+.tag.amber{color:#9a5a06;background:#fff7e8;border-color:#f1d5a7}
+.tag.green{color:#14734c;background:#eaf8f0;border-color:#b9e5ca}
+.tag.red{color:#b83243;background:#fff0f1;border-color:#f0c1c7}
+.paneltitle{color:#172536}
+.paneltitle small{color:#64748b}
+.tabletools input,.map-toolbar input,.map-toolbar select{background:#fff;border-color:#cbd5e1;color:#172536}
+.tabletools input:focus{border-color:#087f8c}
+.tablewrap{border-color:#dbe3ec}
+th{background:#edf2f7;color:#475569}
+td,th{border-bottom-color:#e2e8f0}
+td{color:#334155}
+td:first-child{color:#475569}
+tbody tr:hover{background:#f1f7fa}
+.cell{color:#35617b}
+.num{color:#9a5a06}
+.empty{color:#64748b}
+.location-ref{border-color:#087f8c33;background:#f2fbfc}
+.location-ref b{color:#172536}
+.ref-upload{border-color:#087f8c66;color:#087f8c}
+.map-toolbar button{background:#e8f3f5;border-color:#b7d8dc;color:#087f8c}
+#siteMap{background:#eaf0f5;border-color:#dbe3ec}
+.maplegend,.mapnote{color:#64748b}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#172536;box-shadow:0 2px 14px rgba(15,23,42,.18)}
+.leaflet-popup-content b{color:#087f8c}
+.leaflet-container{background:#eaf0f5}
+.leaflet-control-attribution{background:rgba(255,255,255,.85)!important;color:#475569!important}
+.leaflet-control-attribution a{color:#087f8c!important}
+.notice{border-color:#b7d8dc;background:#f2fbfc;color:#526273}
+.notice b{color:#087f8c}
+.assessment{background:#f8fafc;border-color:#dbe3ec}
+.assessment h3{color:#172536}
+.assessment p{color:#526273}
+.assessment strong{color:#172536}.voip-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:4px 0 16px}.metric-mini{background:#f8fafc;border:1px solid #dbe3ec;border-radius:8px;padding:11px}.metric-mini span{display:block;font-size:10px;color:#64748b;margin-bottom:6px}.metric-mini b{font:600 13px 'DM Mono';color:#172536}
+footer{color:#64748b}
+@media(prefers-color-scheme:dark){body{background:#f3f6fa;color:#172536}}
+/* Robust file-picker hit targets: invisible native inputs cover their upload cards */
+.upload-card{position:relative;overflow:hidden}
+.upload-card .upload-file-input{display:block!important;position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:5;margin:0;padding:0}
+.ref-upload{position:relative;display:inline-flex;align-items:center;justify-content:center;overflow:hidden}
+.ref-upload .ref-file-input{display:block!important;position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:5;margin:0;padding:0}
+.upload-card .uploadtext,.upload-card .fileicon,.upload-card .upload-action{pointer-events:none}
+/* Reliable complaint investigation tab interaction */
+nav.tabs{position:relative;z-index:20;pointer-events:auto}nav.tabs .tab{position:relative;z-index:21;pointer-events:auto;cursor:pointer;touch-action:manipulation}nav.tabs .tab:focus-visible{outline:2px solid #0891a2;outline-offset:3px}
